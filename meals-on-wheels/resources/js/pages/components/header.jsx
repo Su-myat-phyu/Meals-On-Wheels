@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../../assets/logo.png";
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,13 +64,12 @@ const Header = () => {
           ))}
         </ul>
 
-        {/* Action Buttons */}
         <div className="hidden md:flex space-x-4">
           <button className="bg-primary-500 px-5 py-2 text-white rounded hover:bg-primary-700 font-serif">
-            Login
+            <a href="/login">Login</a>
           </button>
           <button className="border-2 border-primary-500 px-5 py-2 rounded text-primary-500 hover:bg-primary-500 hover:text-white font-serif">
-            Register
+          <a href="/register">Register</a>
           </button>
         </div>
       </nav>
